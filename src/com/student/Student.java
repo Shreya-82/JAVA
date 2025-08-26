@@ -50,6 +50,20 @@ public class Student {
 	public void payfee() {
 		System.out.println("The student " + Name + " paid the tution fee");
 	}
+	public String search(int Roll_No) {
+		if (this.Roll_No == Roll_No) {
+	        return "Student found: " + Name;
+	    } else {
+	        return "Student not found";
+	    }
+	}
+	public String search(String Name, String Department) {
+		if (this.Name == Name && this.Department == Department) {
+	        return "Student found: " + Name;
+	    } else {
+	        return "Student not found";
+	    }
+	}
 //	public static void main(String[] args) {
 //		// TODO Auto-generated method stub
 //		Student std1 = new Student(); // by default constructor
