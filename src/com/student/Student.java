@@ -8,12 +8,18 @@ public class Student {
 //	public int Age;
 //	static String CollegeName = "KIET";
 	
-	protected String Name;
-	String Department;
+//	protected String Name;
+//	String Department;
+////	final  String Department = "AI";
+//	int Roll_No;
+//	int Age;
+//	static String CollegeName = "KIET";
+	private String Name;
+	private String Department;
 //	final  String Department = "AI";
-	int Roll_No;
-	int Age;
-	static String CollegeName = "KIET";
+	private int Roll_No;
+	private int Age;
+	private String CollegeName = "KIET";
 	//Constructor
 	public Student(String Name, String D, int Roll_No, int Age) {
 		this.Name = Name;
@@ -50,6 +56,42 @@ public class Student {
 	public void payfee() {
 		System.out.println("The student " + Name + " paid the tution fee");
 	}
+	
+	public int getAge() {
+		return Age;
+	}
+	public void SetAge(int Age) {
+		this.Age = Age;
+	}
+	
+	public String getCollegeName() {
+		return CollegeName;
+	}
+	public void SetCollegeName(String CollegeName) {
+		this.CollegeName = CollegeName;
+	}
+	
+	public int getRoll_No() {
+		return Roll_No;
+	}
+	public void SetRoll_No(int Roll_No) {
+		this.Roll_No = Roll_No;
+	}
+	
+	public String getDepartment() {
+		return Department;
+	}
+	public void SetDepartment(String Department) {
+		this.Department = Department;
+	}
+	
+	public String getName() {
+		return Name;
+	}
+	public void SetName(String Name) {
+		this.Name = Name;
+	}
+	
 	public String search(int Roll_No) {
 		if (this.Roll_No == Roll_No) {
 	        return "Student found: " + Name;
