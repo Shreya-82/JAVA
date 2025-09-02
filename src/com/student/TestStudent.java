@@ -16,5 +16,8 @@ public class TestStudent {
 		S1.payfee();
 		HostelStudent hs = new HostelStudent("Priya", "AI", 90, 19, 90, "H703", "Arya", 309);
 		hs.payfee();
+//		Payment p1 = new Payment(); //obj of abstarct class cannot be created
+//		Payment p1 = new UpiPayment(); //run time polymorphism
+		
 	}
 }
