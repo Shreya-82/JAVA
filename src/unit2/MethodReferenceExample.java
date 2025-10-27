@@ -16,9 +16,9 @@ public class MethodReferenceExample {
 	
 	public static void main(String[] args) {
 		MethodReferenceExample obj1 = new MethodReferenceExample();
-		Greet obj = MethodReferenceExample::new;
-//		w
+//		Greet obj = MethodReferenceExample::new;
 //		Greet obj = MethodReferenceExample::static_greet;
+		Greet obj = obj1::instance_greet;
 		obj.greeting();
 	}
 
